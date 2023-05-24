@@ -1,10 +1,11 @@
 function solution(my_string, letter) {
-    my_string = my_string.split("");
+    let str = my_string.split("");
     
-    for (let i = 0; i < my_string.length; i++) {
-        if (my_string[i] == letter) {
-            my_string[i] = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == letter) {
+            str[i] = "";
         }        
-    }  
-    return my_string.join("");
+    }
+  
+    return str.join("");
 }
