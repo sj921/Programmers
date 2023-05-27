@@ -1,6 +1,4 @@
-SELECT 
-    ANIMAL_ID,
-    NAME
+SELECT *
 FROM ( SELECT
             INS.ANIMAL_ID,
             INS.NAME
@@ -14,5 +12,3 @@ FROM ( SELECT
             OUTS.DATETIME - INS.DATETIME DESC 
      )
 WHERE ROWNUM <= 2;
-
-    
